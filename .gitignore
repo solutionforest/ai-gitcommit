@@ -1,0 +1,6 @@
+# generic gitignore for mac
+.DS_Store
+#some test folders
+test/
+test2/
+test3/
