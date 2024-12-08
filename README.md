@@ -31,12 +31,16 @@ This project provides a script to automatically generate meaningful and concise 
 - **`curl`**: A command-line tool for making HTTP requests.
 
 You can install these dependencies using your system's package manager:
-```bash
+
 # For Debian/Ubuntu
+```bash
 sudo apt install jq curl
+```
 
 # For macOS
+```bash
 brew install jq curl
+```
 
 ## Setting Up Ollama
 
@@ -51,4 +55,9 @@ Visit the [Ollama website](https://ollama.ai/) and follow the instructions for i
 This project uses the `llama3.2:3b` model. Once Ollama is installed, pull the model by running:
 
 ```bash
-ollama pull llama3.2:3b
+ollama create gitdiff -f Modelfile
+```
+
+### Commit Message
+```bash
+./git-ai-commit.sh
